@@ -136,10 +136,6 @@ a {
   margin-bottom: 50px;
 }
 
-.accent {
-  color: var(--accent-text-color);
-}
-
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -148,6 +144,10 @@ a {
   color: var(--black-text-color);
   margin-right: 93px;
   padding: 25px 0px;
+}
+
+.accent {
+  color: var(--accent-text-color);
 }
 
 .flex-container {
