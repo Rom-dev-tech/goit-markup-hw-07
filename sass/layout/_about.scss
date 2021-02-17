@@ -2,6 +2,7 @@
   padding-bottom: 94px;
 }
 .about-list {
+  @extend %list;
   display: flex;
   align-items: center;
 }
@@ -16,6 +17,7 @@
 .label {
   font-weight: 700;
   line-height: 1.14;
+  color: var(--white-text-color);
   text-transform: uppercase;
 
   text-align: center;

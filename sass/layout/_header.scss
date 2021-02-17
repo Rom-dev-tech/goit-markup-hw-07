@@ -7,12 +7,14 @@
   align-items: center;
 }
 .site-nav {
+  @extend %list;
   display: flex;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
 .nav-link {
+  @extend %link;
   position: relative;
 
   display: inline-flex;
@@ -70,6 +72,7 @@
   fill: currentColor;
 }
 .site-contacts {
+  @extend %list;
   display: flex;
   margin-left: auto;
 }

@@ -3,6 +3,7 @@
 }
 
 .portfolio-list {
+  @extend %list;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,6 +57,7 @@
   margin-right: 8px;
 }
 .cards-list {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
@@ -71,6 +73,7 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .cards-link {
+  @extend %link;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -87,6 +90,7 @@
 
   font-size: 18px;
   line-height: 1.55;
+  color: var(--white-text-color);
 
   padding: 63px 24px;
   width: 100%;

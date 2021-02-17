@@ -2,6 +2,7 @@
   background-color: var(--bgc-team-color);
 }
 .team-list {
+  @extend %list;
   display: flex;
   align-items: center;
   margin: -15px;

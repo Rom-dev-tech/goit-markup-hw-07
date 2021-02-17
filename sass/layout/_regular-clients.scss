@@ -1,4 +1,5 @@
 .regular-clients-list {
+  @extend %list;
   display: flex;
   text-align: center;
 }
@@ -17,6 +18,7 @@
   outline: none;
 }
 .regular-clients-link {
+  @extend %link;
   width: 100%;
   border: 1px solid var(--icon-color);
   border-radius: 4px;

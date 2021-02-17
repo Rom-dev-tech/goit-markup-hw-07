@@ -9,6 +9,7 @@
   text-transform: uppercase;
 }
 .description-list {
+  @extend %list;
   display: flex;
 }
 .icon-container {
