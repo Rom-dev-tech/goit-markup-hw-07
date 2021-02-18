@@ -2,8 +2,7 @@
   padding: 200px 0;
   text-align: center;
   background-color: var(--bgc-hero-color);
-}
-.hero.main-backgoung-img {
+
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -18,6 +17,7 @@
   background-position: center;
   background-color: #2f303a;
 }
+
 .hero-title {
   margin-bottom: 30px;
 
@@ -35,7 +35,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-.hero-btn {
-  padding-left: 28px;
-  padding-right: 28px;
+.hero .btn {
+  padding: 10px 28px;
 }
