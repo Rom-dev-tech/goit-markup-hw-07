@@ -5,7 +5,6 @@
 }
 .footer .logo {
   @extend %withe;
-  @extend %link;
   padding: 0;
   margin-bottom: 20px;
 }
@@ -16,6 +15,10 @@
   @extend %link;
   color: var(--footer-text-color);
 
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address {
@@ -25,10 +28,6 @@
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
-}
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-text-color);
 }
 .footer .social-item {
   border-radius: 50%;

@@ -26,10 +26,11 @@
   border: none;
 
   cursor: pointer;
-}
-.modal-close-btn:hover .modal-icon,
-.modal-close-btn:focus .modal-icon {
-  fill: var(--accent-text-color);
+
+  &:hover .modal-icon,
+  &:focus .modal-icon {
+    fill: var(--accent-text-color);
+  }
 }
 
 .modal-icon {
