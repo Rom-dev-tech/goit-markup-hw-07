@@ -24,6 +24,8 @@
 .card-description {
   padding: 20px 20px;
 }
-.portfolio-item:not(:last-child) {
-  margin-right: 8px;
+.portfolio-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }

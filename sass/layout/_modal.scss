@@ -26,11 +26,6 @@
   border: none;
 
   cursor: pointer;
-
-  &:hover .modal-icon,
-  &:focus .modal-icon {
-    fill: $accent-text-color;
-  }
 }
 
 .modal-icon {
@@ -40,4 +35,9 @@
 
   border: 1px solid $icon-color;
   border-radius: 50%;
+
+  .modal-close-btn:hover &,
+  .modal-close-btn:focus & {
+    fill: $accent-text-color;
+  }
 }

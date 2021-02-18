@@ -20,10 +20,6 @@
 .form-field {
   display: block;
   margin-bottom: 10px;
-
-  &:focus-within .form-icon {
-    fill: $accent-text-color;
-  }
 }
 .form-imput {
   width: 100%;
@@ -48,6 +44,10 @@
   left: 12px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-field:focus-within & {
+    fill: $accent-text-color;
+  }
 }
 .form-label {
   font-size: 12px;
@@ -115,6 +115,23 @@
     margin-right: 8px;
 
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .checkbox-input:checked + & {
+      background-image: url(../images/check.svg);
+      background-color: $accent-text-color;
+      background-origin: border-box;
+      background-size: contain;
+      border-color: transparent;
+    }
+    .checkbox-input:focus + & {
+      box-shadow: 0 0 0 0.1em $title-text-color;
+    }
+    .checkbox-input:disabled + & {
+      border: 2px solid $icon-color;
+    }
+    .checkbox-input:checked:disabled + & {
+      background-color: $icon-color;
+    }
   }
 }
 .contract-link {
@@ -130,25 +147,7 @@
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-
-  &:checked + .checkbox-label::before {
-    background-image: url(../images/check.svg);
-    background-color: $accent-text-color;
-    background-origin: border-box;
-    background-size: contain;
-    border-color: transparent;
-  }
-  &:focus + .checkbox-label::before {
-    box-shadow: 0 0 0 0.1em $title-text-color;
-  }
-  .checkbox-input:disabled + .checkbox-label::before {
-    border: 2px solid $icon-color;
-  }
-  &:checked:disabled + .checkbox-label::before {
-    background-color: $icon-color;
-  }
 }
-
 // form-submit-button
 .form-submit-btn-wrapper {
   display: flex;
