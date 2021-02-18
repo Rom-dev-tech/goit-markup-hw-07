@@ -12,12 +12,12 @@
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: $title-text-color;
 
   margin-bottom: 4px;
 }
 .portfolio-text {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-size: 16px;
   line-height: 1.87;
 }
