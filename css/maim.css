@@ -98,13 +98,13 @@ a {
   display: flex;
 }
 
-.social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .social-item {
   width: 44px;
   height: 44px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link {
@@ -118,8 +118,7 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   background-color: var(--accent-text-color);
   fill: var(--white-text-color);
 }
@@ -168,6 +167,14 @@ a {
   margin-right: 50px;
 }
 
+.nav-link.contact {
+  color: var(--primary-text-color);
+}
+
+.nav-link.current {
+  color: var(--accent-text-color);
+}
+
 .nav-link {
   position: relative;
   display: inline-flex;
@@ -180,8 +187,11 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.current::after,
-.nav-link.scale::after {
+.nav-link:hover, .nav-link:focus {
+  color: var(--accent-text-color);
+}
+
+.nav-link.current::after, .nav-link.scale::after {
   content: '';
   display: block;
   position: absolute;
@@ -198,22 +208,8 @@ a {
   transform: scaleX(0);
 }
 
-.header-nav .nav-link.scale:hover::after,
-.header-nav .nav-link.scale:focus::after {
+.nav-link.scale:hover::after, .nav-link.scale:focus::after {
   transform: scaleX(1);
-}
-
-.nav-link.contact {
-  color: var(--primary-text-color);
-}
-
-.nav-link.current {
-  color: var(--accent-text-color);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-text-color);
 }
 
 .icon-mail,
