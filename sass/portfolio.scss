@@ -8,20 +8,14 @@
 @import './base/container';
 
 // COMPONENTS
-@import './components/button';
 @import './components/social-links';
-@import './components/title';
 @import './components/logo';
+@import './components/button';
 
 // LAYOUT
 @import './layout/header';
-@import './layout/hero';
-@import './layout/description';
-@import './layout/about';
-@import './layout/teame';
-@import './layout/regular-clients';
+@import './layout/portfolio';
+@import './layout/portfolio-button';
+@import './layout/portfolio-cards';
 @import './layout/footer';
 @import './layout/footer-form';
-@import './layout/backdrop';
-@import './layout/modal';
-@import './layout/form';
