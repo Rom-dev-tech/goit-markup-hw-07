@@ -30,10 +30,6 @@
   text-decoration: none;
 }
 
-.footer .logo {
-  color: var(--white-text-color);
-}
-
 body {
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -171,10 +167,6 @@ a {
   color: var(--primary-text-color);
 }
 
-.nav-link.current {
-  color: var(--accent-text-color);
-}
-
 .nav-link {
   position: relative;
   display: inline-flex;
@@ -212,6 +204,10 @@ a {
   transform: scaleX(1);
 }
 
+.nav-link.current {
+  color: var(--accent-text-color);
+}
+
 .icon-mail,
 .icon-phone {
   margin-right: 10px;
@@ -246,6 +242,10 @@ a {
   background-color: #2f303a;
 }
 
+.hero .btn {
+  padding: 10px 28px;
+}
+
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
@@ -261,10 +261,6 @@ a {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.hero .btn {
-  padding: 10px 28px;
 }
 
 .description-subtitle {
@@ -415,6 +411,7 @@ a {
 .footer .logo {
   padding: 0;
   margin-bottom: 20px;
+  color: var(--white-text-color);
 }
 
 .footer-link {
@@ -470,6 +467,13 @@ a {
   margin-left: auto;
 }
 
+.form-container .btn {
+  position: relative;
+  padding-left: 29px;
+  padding-right: 28px;
+  text-align: start;
+}
+
 .footer-form-input {
   min-width: 358px;
   height: 50px;
@@ -488,13 +492,6 @@ a {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-send-btn {
-  position: relative;
-  padding-left: 29px;
-  padding-right: 28px;
-  text-align: start;
 }
 
 .btn-icon {
@@ -805,7 +802,7 @@ a {
   justify-content: center;
 }
 
-.form-submit-btn {
+.form-submit-btn-wrapper .btn {
   padding: 10px 50px;
 }
 /*# sourceMappingURL=maim.css.map */

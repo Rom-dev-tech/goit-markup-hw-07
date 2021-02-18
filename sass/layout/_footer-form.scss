@@ -3,6 +3,13 @@
   flex-direction: column;
 
   margin-left: auto;
+
+  & .btn {
+    position: relative;
+    padding-left: 29px;
+    padding-right: 28px;
+    text-align: start;
+  }
 }
 .footer-form-input {
   min-width: 358px;
@@ -25,13 +32,6 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
-}
-
-.footer-send-btn {
-  position: relative;
-  padding-left: 29px;
-  padding-right: 28px;
-  text-align: start;
 }
 .btn-icon {
   position: absolute;

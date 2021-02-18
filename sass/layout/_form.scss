@@ -153,7 +153,8 @@
 .form-submit-btn-wrapper {
   display: flex;
   justify-content: center;
-}
-.form-submit-btn {
-  padding: 10px 50px;
+
+  & .btn {
+    padding: 10px 50px;
+  }
 }

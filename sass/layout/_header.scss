@@ -17,9 +17,7 @@
 .nav-link.contact {
   color: var(--primary-text-color);
 }
-.nav-link.current {
-  color: var(--accent-text-color);
-}
+
 .nav-link {
   @extend %link;
   position: relative;
@@ -63,6 +61,10 @@
   &.scale:hover::after,
   &.scale:focus::after {
     transform: scaleX(1);
+  }
+
+  &.current {
+    color: var(--accent-text-color);
   }
 }
 

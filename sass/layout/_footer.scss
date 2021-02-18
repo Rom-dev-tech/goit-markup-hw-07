@@ -2,11 +2,12 @@
   background-color: var(--bgc-hero-color);
 
   padding: 60px 0;
-}
-.footer .logo {
-  @extend %withe;
-  padding: 0;
-  margin-bottom: 20px;
+
+  & .logo {
+    padding: 0;
+    margin-bottom: 20px;
+    color: var(--white-text-color);
+  }
 }
 .footer-list {
   @extend %list;

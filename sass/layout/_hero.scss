@@ -16,6 +16,10 @@
   background-size: cover;
   background-position: center;
   background-color: #2f303a;
+
+  & .btn {
+    padding: 10px 28px;
+  }
 }
 
 .hero-title {
@@ -34,7 +38,4 @@
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
-}
-.hero .btn {
-  padding: 10px 28px;
 }
