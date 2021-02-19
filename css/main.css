@@ -529,8 +529,7 @@ a {
 
 .form-container .btn {
   position: relative;
-  padding-left: 29px;
-  padding-right: 28px;
+  padding: 10px 28px;
   text-align: start;
 }
 
